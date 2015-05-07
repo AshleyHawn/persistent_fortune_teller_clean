@@ -1,0 +1,19 @@
+<h1>List of Zodiac</h1>
+
+<table>
+<tr>
+  <th>Sign</th>
+  <th>Creature</th>
+</tr>
+
+  <% @list_of_zodiacs.each do |zodiac %>
+    <tr>
+      <td><%= zodiac.sign %></td>
+      <td><%= zodiac.creature %></td>
+    </tr>
+  <% end %>
+
+</table>
+
+
+

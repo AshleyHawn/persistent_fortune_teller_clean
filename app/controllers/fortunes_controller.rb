@@ -8,6 +8,12 @@ class FortunesController < ApplicationController
   end
 
   def unlucky
-    @numbers = [rand(100...1000), rand(100...1000), rand(100...1000), rand(100...1000), rand(100...1000)]
+    @numbers = [rand(100...1000), rand(100...1000), rand(100...1000), rand(100...1000), rand(100...1000)
+  end
+
+  def withing_range
+    @minimum = params["min"].to_i
+    @maximum = params["max"].to_i
+    @the_number = rand(@minimum..@maximum)
   end
 end
